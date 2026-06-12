@@ -18,6 +18,8 @@ return 0;
 }
 
 /*
-Note -> if you compare like this if(password == input), you're comparing address of password == address of input insted of this one should use string comparision function. 
+Note -> if you compare like this if(password == input), you're comparing 
+address of password == address of input insted of this one should use 
+string comparision function. 
 strcmp(password, input) = 0
 */
