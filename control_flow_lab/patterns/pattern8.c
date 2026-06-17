@@ -2,13 +2,9 @@
 int main()
 {
 
-int row, col;
-
+int row;
 printf("Enter rows :: ");
 scanf("%d", &row);
-
-printf("Enter columns :: ");
-scanf("%d", &col);
 
 for(int i = 1; i <= row; i++)
 {
