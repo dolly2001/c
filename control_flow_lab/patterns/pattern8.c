@@ -17,11 +17,11 @@ for(int i = 1; i <= row; i++)
 	{
 		printf("   ");
 	}
-	for(int j = i; j <= col; j++)
+	for(int j = i; j <= row; j++)
 	{
 		printf(" * ");
 	}
-	for(int k = 1; k <= col-i; k++)
+	for(int k = 1; k <= row-i; k++)
 	{
 		printf(" * ");
 	}
