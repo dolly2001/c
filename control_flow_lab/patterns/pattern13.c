@@ -2,8 +2,8 @@
 int main()
 {
 int row;
-printf("Enter row :: ");
-scanf("%d", &row);
+printf("Enter row ::");
+scanf("%d",&row);
 
 for(int i = 1; i <= row; i++)
 {
@@ -11,9 +11,10 @@ for(int i = 1; i <= row; i++)
 	{
 		printf(" ");
 	}
+
 	for(int k = 1; k <= (2*i)-1; k++)
 	{
-		if(k==1|| k == (2*i)-1|| i==row)
+		if(k==1 || k==(2*i)-1 ||i==row)
 		{
 			printf("*");
 		}
@@ -26,5 +27,4 @@ for(int i = 1; i <= row; i++)
 }
 
 return 0;
-
 }
