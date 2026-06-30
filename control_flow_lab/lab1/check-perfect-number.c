@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-	int Inp, factors = 1;
+	int Inp, factors = 0;
 	printf("Input :: ");
 	scanf("%d", &Inp);
 	int i;
-	for(i = 2; i < Inp; i++)
+	for(i = 1; i < Inp; i++)
 	{
 		if(Inp%i==0)
 			factors = factors+i;
