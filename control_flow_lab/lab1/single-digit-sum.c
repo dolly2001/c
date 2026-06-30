@@ -1,43 +1,35 @@
 #include <stdio.h>
-
-
-int singleDigitSum(int num)
-{
-    while(num > 9)
-    {
-        int sum = 0;
-
-        while(num != 0)
-        {
-            sum = sum + (num % 10);
-            num = num / 10;
-        }
-
-        num = sum;
-    }
-
-    return num;
-}
-
 int main()
 {
-	int num;
+
+	int digit_sum = 0;
+	int value;
 	printf("Enter any positive Integer :: ");
-	scanf("%d", &num);
+	scanf("%d", &value);
 
-	int res = singleDigitSum(num);
-
-	printf("%d",res);
+	while(value > 9)
+	{
+		digit_sum = 0;
+		while(value!=0)
+		{
+			digit_sum = digit_sum + (value%10);
+			value = value/10;
+		}
+		value = digit_sum;
+	}
+	if(value < 0)
+	{
+		printf("Warning : Please enter a positive integer");
+	}
+	else if(value >= 0 && value <= 9)
+	{
+		printf("%d",value);
+	}
+	else
+	{
+		printf("%d",digit_sum);
+	}
+	putchar(10);
 
 return 0;
 }
-
-int single_digit_sum(int a){
-	int digit_sum = 0;
-	while(a!=0)
-	{
-		digit_sum = digit_sum + (a%10);
-		a = a/10;
-	}
-	return digit_sum;
-	}
