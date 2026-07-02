@@ -1,5 +1,9 @@
 #include <stdio.h>
 void main()
 {
-	printf("Hello World!");
+	printf("code file");
+	printf("Pre-Processed File");
+	printf("assembly file");
+	printf("object file");
+	printf("executable file");
 }
