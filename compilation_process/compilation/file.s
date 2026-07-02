@@ -2,7 +2,15 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Hello World!"
+	.string	"code file"
+.LC1:
+	.string	"Pre-Processed File"
+.LC2:
+	.string	"assembly file"
+.LC3:
+	.string	"object file"
+.LC4:
+	.string	"executable file"
 	.text
 	.globl	main
 	.type	main, @function
@@ -16,6 +24,22 @@ main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	leaq	.LC0(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	.LC1(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	.LC2(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	.LC3(%rip), %rax
+	movq	%rax, %rdi
+	movl	$0, %eax
+	call	printf@PLT
+	leaq	.LC4(%rip), %rax
 	movq	%rax, %rdi
 	movl	$0, %eax
 	call	printf@PLT
