@@ -839,5 +839,9 @@ extern int __overflow (FILE *, int);
 # 2 "file.c"
 void main()
 {
- printf("Hello World!);
+ printf("code file");
+ printf("Pre-Processed File");
+ printf("assembly file");
+ printf("object file");
+ printf("executable file");
 }
